@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Cookie Consent START -->
+    <!-- Cookie Consent START -->
+    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.2.0/cookie-consent.js"
+        charset="UTF-8"></script>
+    <script type="text/javascript" charset="UTF-8">
+        document.addEventListener('DOMContentLoaded', function () {
+            cookieconsent.run({ "notice_banner_type": "interstitial", "consent_type": "express", "palette": "light", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "http://127.0.0.1:5500" });
+        });
+    </script>
+    <!-- Cookie Consent End -->
+    <script src="dataLayer.js" data-cookie-consent="tracking" type="text/plain"> </script>
+     <script src="https://assets.adobedtm.com/757ce0c442a6/839d536fc383/launch-b92fca03c8f0-development.min.js" async
+        data-cookie-consent="tracking" type="text/plain"></script> 
+    <script src="links.js" data-cookie-consent="tracking" type="text/plain"></script>
+    <title>Product</title>
+    <input type="button" onclick="redir(this)" value="Home Page" class="btn">
+    <input type="button" onclick="redir(this)" value="About Us" class="btn">
+    <input type="button" onclick="redir(this)" value="Apply" id="Apply" class="btn">
+    <input type="button" onclick="redir(this)" value="Logout" id="logout" class="btn">
+</head>
+
+<body>
+
+    <table border="1" style="position: absolute;top: 50px;border: 3px solid green;">
+
+        <tr>
+            <th colspan="5">Loyalty Page</th>
+            
+        </tr>
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Add to Cart</th>
+            <th>Buy</th>
+        </tr>
+        <tr>
+            <th>Airpods Pro</th>
+            <th>INR 21,000</th>
+            <th>
+                <select id="addtocart1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+            </th>
+            <th><input type="button" value="Add to Cart" id="Add to Cart 1" onclick="redir(this)" class="btn"></th>
+            <th rowspan="2"><input type="button" value="Buy" onclick="redir(this)"></th>
+        </tr>
+
+        <tr>
+            <th>Redmi Note 10 Pro</th>
+            <th>INR 10,200</th>
+            <th>
+                <select id="addtocart2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+            </th>
+            <th><input type="button" value="Add to Cart" id="Add to Cart 2" onclick="redir(this)" class="btn"></th>
+
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Cookie Consent START -->
+    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.2.0/cookie-consent.js"
+        charset="UTF-8"></script>
+    <script type="text/javascript" charset="UTF-8">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            cookieconsent.run({ "notice_banner_type": "interstitial", "consent_type": "express", "palette": "light", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "http://127.0.0.1:5500" });
+        });
+    </script>
+    <!-- Cookie Consent End -->
+    <script src="dataLayer.js" data-cookie-consent="tracking" type="text/plain"> </script>
+    <script src="https://assets.adobedtm.com/757ce0c442a6/839d536fc383/launch-b92fca03c8f0-development.min.js" async
+        data-cookie-consent="tracking" type="text/plain"></script>
+    <script src="links.js" data-cookie-consent="tracking" type="text/plain"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up for bank account</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <input type="button" onclick="redir(this)" value="Home Page" class="btn">
+    <input type="button" onclick="redir(this)" value="About Us" class="btn">
+    <input type="button" onclick="redir(this)" value="Product" id="product" class="btn">
+           
+    <input type="button" onclick="redir(this)" value="Login" id="login" class="btn">
+    <input type="button" onclick="redir(this)" value="Logout" id="logout" class="btn">
+    <input type="button" onclick="redir(this)" value="Apply" id="Apply" class="btn">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Help us with what you're looking forward and we will reach you out</h2>
+
+        <form  method="post">
+            <!-- First Name -->
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+
+            <!-- Last Name -->
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+          <!-- Product Dropdown -->
+          <div class="form-group">
+            <label for="product_service">Looking for Product/ Service:</label>
+            <select id="product_service" name="product_service" required>
+                <option value="">Select Product</option>
+                <option value="Loan">Loan</option>
+                <option value="Bank Account">Bank Account</option>
+                <option value="Credit Card">Credit Card</option>
+            </select>
+        </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+             <!-- Mob -->
+             <div class="form-group">
+                <label for="email">Mob:</label>
+                <input type="text" id="mob" name="mob" required>
+            </div>
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+  <!-- PAN Card -->
+  <div class="form-group">
+    <label for="pan">PAN Card:</label>
+    <input type="text" id="pan" name="pan" required>
+</div>
+            <!-- City Dropdown -->
+            <div class="form-group">
+                <label for="city">City:</label>
+                <select id="city" name="city" required>
+                    <option value="">Select City</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Lucknow">Lucknow</option>
+                </select>
+            </div>
+
+            
+
+            <!-- Gender Toggle Button -->
+            <div class="form-group gender-container">
+                <label>Gender:</label>
+                <label class="gender-label" for="male">
+                    <input type="radio" id="customer_gender" name="customer_gender" value="Male" required> Male
+                </label>
+                <label class="gender-label" for="female">
+                    <input type="radio" id="customer_gender" name="customer_gender" value="Female" required> Female
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <input type="button" value="Post Inquiry" onclick="redir(this)" >
+        </form>
+    </div>
+
+</body>
+
+</html>
